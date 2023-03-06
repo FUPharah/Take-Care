@@ -1,0 +1,7 @@
+<h1> Add a new family member </h1>
+  <%= simple_form_for(@family) do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :age %>
+  <%= f.button :submit %>
+  <% end %>
