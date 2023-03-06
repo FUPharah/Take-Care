@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :age, presence: true, numericality: { only_integer: true, greater_than: 0 }
   validates :email, presence: true, uniqueness: true, format: { with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i}
   has_many :families
+  has_one_attached :photo
 end

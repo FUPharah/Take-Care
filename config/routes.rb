@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :families, only: %i[index show new create destroy edit update]
 end
